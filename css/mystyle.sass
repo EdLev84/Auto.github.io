@@ -1,0 +1,182 @@
+$colorOne: #212121
+$colorTwo: #595959
+$colorThree: #ff3448
+$colorFour: #00adc1
+$colorFive: #ffffff
+
+
+
+
+// MAIN STYLES
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+a
+    text-decoration: none
+
+
+
+
+
+//HEADER MAIN STYLE
+header
+    width: 100%
+    background-color: $colorOne
+
+
+    // .1
+    .header-blocks
+        max-width: 1000px
+        width: 100%
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        margin: 0 auto
+
+
+        // .2
+        .links-search
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: flex-end
+            padding: 5px 0 5px 5px
+
+            a
+                color: $colorThree
+                margin-right: 40px
+                transition: color 0.3s ease-in-out 0.3s
+                font-size: 14px
+
+                img
+                    margin-right: 8px
+
+            a:hover
+                color: $colorFour
+
+            img
+                transform: scale(1)
+                transition: transform 0.3s ease-in-out 0.3s
+                cursor: pointer
+
+            img:hover
+                transform: scale(1.5)
+
+            .v-line
+                height: 30px
+                width: 2px
+                background-color: $colorTwo
+                margin-right: 18px
+
+
+        // .3
+        .h-line
+            max-width: 1000px
+            width: 100%
+            height: 2px
+            background-color: $colorTwo
+
+
+        // .4
+        .logo-phone-links
+            width: 100%
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: space-between
+            padding: 12px 0 12px 12px
+
+            .logo
+                width: 180px
+
+                h1
+                    color: $colorFive
+                    font-size: 45px
+
+                    mark
+                        background: none
+                        color: $colorThree
+
+                p
+                    font-size: 15px
+                    color: $colorFive
+                    letter-spacing: 3px
+                    text-align: center
+
+            .phone-links
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+
+                .phone
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-end
+                    justify-content: flex-end
+                    margin-right: 60px
+
+                    p:nth-child(1)
+                        font-size: 20px
+                        color: $colorFive
+                        margin-bottom: 20px
+
+                        img
+                            margin-right: 20px
+
+                    p:nth-child(2)
+                        font-size: 14px
+                        color: $colorTwo
+
+            .links
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                justify-content: space-between
+
+                .link
+                    width: 78px
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    transition: box-shadow 0.3s ease-in-out 0.3s
+                    cursor: pointer
+                    padding: 5px
+
+                    a
+                        font-size: 15px
+                        font-weight: bold
+                        color: $colorFive
+                        margin-top: 18px
+
+                .link:nth-child(2),
+                .link:nth-child(4)
+                    margin: 0 20px 0 20px
+
+                .link:nth-child(6)
+                    margin: 0 0 0 20px
+
+                .link:hover
+                    box-shadow: 0 5px 5px 5px rgba(255, 52, 72, 0.8)
+
+                .v-line
+                    width: 2px
+                    height: 65px
+                    background-color: $colorTwo
+
+
+
+
+
+        // HEADER SCREEN SIZES STYLES
+        @media screen and (max-width: 360px)
+            .links-search
+                justify-content: center
+
+                a
+                    margin: 10px 15px 10px 0
+
+                img
+                    margin-right: 5px
